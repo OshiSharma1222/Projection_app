@@ -11,6 +11,7 @@ import {
   type ImageStyle,
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, fonts, radii, shadows } from '../src/theme/tokens';
 import { Stage } from '../src/components/onboarding/Stage';
@@ -66,6 +67,7 @@ const SLIDES: Slide[] = [
 ];
 
 export default function ValueSlides() {
+  const router = useRouter();
   const insets = useSafeAreaInsets();
   const { width } = useWindowDimensions();
   const scroller = useRef<ScrollView>(null);
@@ -76,9 +78,7 @@ export default function ValueSlides() {
     setIndex(next);
   };
 
-  const finish = () => {
-    // TODO: continue to sign in (mock 05) once that screen exists.
-  };
+  const finish = () => router.push('/signin');
 
   const onMomentumEnd = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const next = Math.round(e.nativeEvent.contentOffset.x / width);

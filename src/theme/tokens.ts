@@ -27,6 +27,21 @@ export const colors = {
 
   line: '#EDF0F5',
   placeholder: '#F9FAFC',
+
+  /** tinted fill behind a focused input or a selected card (.pnum, .goal.on) */
+  selectedTint: '#F5FBFF',
+  /** grey reassurance surface (.trust, the guest row) */
+  surfaceMuted: '#F7F9FC',
+  /** idle progress dot (.dots i) */
+  dotIdle: '#D5DCE6',
+  /** numeric keypad chrome (.kpwrap, .key.act) */
+  keypadBg: '#E9EDF3',
+  keypadAction: '#C9CFD9',
+  /** error field styling (.otp.err i) */
+  errorBorder: '#FCA5A5',
+  errorSurface: '#FEF2F2',
+  /** neutral shadow colour used by every elevated card */
+  shadow: '#101828',
 } as const;
 
 /** CTA gradient — linear-gradient(135deg, #0091EA, #00C6FB) */

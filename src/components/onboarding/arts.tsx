@@ -143,6 +143,9 @@ export function LectureArt() {
 
 /* ============ 04 · tests, rank & analytics ============ */
 
+/** YouTube's brand red — not a product colour, so it stays out of tokens. */
+const YOUTUBE_RED = '#FF0000';
+
 const CHART_BARS = [
   { height: '38%', color: '#E3EEF8' },
   { height: '54%', color: '#CFE6F7' },
@@ -246,7 +249,7 @@ function ProgressBar({ fill, marginTop = 11 }: { fill: `${number}%`; marginTop?:
 }
 
 const cardShadow = {
-  shadowColor: '#101828',
+  shadowColor: colors.shadow,
   shadowOffset: { width: 0, height: 16 },
   shadowOpacity: 0.14,
   shadowRadius: 42,
@@ -354,7 +357,7 @@ const styles = StyleSheet.create({
     width: 16,
     height: 11,
     borderRadius: 3,
-    backgroundColor: '#FF0000',
+    backgroundColor: YOUTUBE_RED,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -395,7 +398,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 36,
     borderRadius: 10,
-    backgroundColor: '#FF0000',
+    backgroundColor: YOUTUBE_RED,
     alignItems: 'center',
     justifyContent: 'center',
     paddingLeft: 2,
@@ -421,7 +424,7 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '42%',
     borderRadius: 2,
-    backgroundColor: '#FF0000',
+    backgroundColor: YOUTUBE_RED,
   },
   scrubKnob: {
     position: 'absolute',
@@ -430,7 +433,7 @@ const styles = StyleSheet.create({
     width: 9,
     height: 9,
     borderRadius: 4.5,
-    backgroundColor: '#FF0000',
+    backgroundColor: YOUTUBE_RED,
   },
   scrubTimes: {
     flexDirection: 'row',

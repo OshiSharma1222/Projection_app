@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     fontFamily: fonts.h500,
     fontSize: 29,
     letterSpacing: 0.4,
-    color: '#FFFFFF',
+    color: colors.surface,
     textAlign: 'center',
   },
   loadTrack: {

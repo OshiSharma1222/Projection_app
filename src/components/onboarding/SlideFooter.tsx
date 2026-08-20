@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     width: 7,
     height: 7,
     borderRadius: radii.pill,
-    backgroundColor: '#D5DCE6',
+    backgroundColor: colors.dotIdle,
   },
   dotActive: {
     width: 26,
